@@ -1,5 +1,15 @@
 <h2>Workshop Todo List </h2>
-        <ul style="list-style:none;"> 
+
+<ul class="card">
+<li>
+  <input type="checkbox" name="/">
+  <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a>
+  <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+</li>
+</ul>
+
+
+        <!--<ul style="list-style:none;"> 
             <li> <input type="checkbox"/>
             <a href="show/1">Make the curriculum  </a> 
                 <span class="pomodoro-estimate">4 pomodoros</span>
@@ -29,18 +39,14 @@
                 <span class="pomodoro-estimate">0 pomodoros</span>
                 </li>
                 <p>
-        
-       
-        
+
         
         </p>
 
-        </ul>
-                   
+        </ul> -->
+                  
         <div id="new-todo-block">
-          <input class="text-input" id="new-todo-description" type="text" placeholder="Add a new todo...">
-          <input class="text-input" id="new-pomodoro-estimate" type="number" placeholder="Pomodoro estimate...">
-          <input class="button" id="add-new-todo-button" type="submit" value="Add todo">
+            <a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add a todo</a>
         </div>
         
         
