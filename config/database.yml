@@ -45,4 +45,3 @@ production:
   adapter: postgresql
   encoding: unicode
   database: todo_app_back_end_production
-  
